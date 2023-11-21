@@ -1,0 +1,61 @@
+.wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 896px;
+    margin: 107px auto 80px;
+    padding: 40px;
+    box-shadow: rgb(212, 224, 236) 0px 4px 32px;
+    border-radius: 20px;
+    background: linear-gradient(rgb(251, 158, 153) 0%, rgb(235, 197, 161) 100%);
+
+    .bg-image {
+        position: absolute;
+        top: -13px;
+        left: 50%;
+        width: 896px;
+        height: 896px;
+        transform: translateX(-50%);
+        background-image: url(https://lido.fi/images/sunsets/main-banner-sun.svg);
+        background-size: contain;
+        background-position: center center;
+    }
+    .box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        > img {
+            width: 27px;
+            height: 27px;
+        }
+        > h3 {
+            margin-top: 10px;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 38px;
+            text-align: center;
+            color: rgb(39, 56, 82);
+        }
+        > p {
+            margin-top: 8px;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: rgb(39, 56, 82);
+            max-width: 664px;
+        }
+        > a {
+            width: 100%;
+            margin-top: 16px;
+            background-color: rgb(39, 56, 82);
+            max-width: 242px;
+            line-height: 56px;
+        }
+    }
+}

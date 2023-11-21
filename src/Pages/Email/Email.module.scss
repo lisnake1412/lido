@@ -1,0 +1,117 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    background-color: rgb(248, 250, 252);
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    max-width: 1360px;
+    min-width: 320px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    > h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        text-align: center;
+        color: rgb(39, 56, 82);
+    }
+    > p {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: rgb(122, 138, 160);
+    }
+
+    > p:last-child {
+        margin-top: 16px;
+        font-size: 12px;
+        line-height: 20px;
+        color: rgb(122, 138, 160);
+        text-align: center;
+        > a {
+            color: rgb(0, 163, 255);
+        }
+    }
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    margin-top: 24px;
+    max-width: 548px;
+}
+
+.input-form {
+    position: relative;
+    width: 100%;
+    &:focus-within {
+        .email-label {
+            transform: translateY(0px);
+            top: 8px;
+            font-size: 10px;
+            color: rgb(19, 107, 255);
+            pointer-events: none;
+            opacity: 1;
+            transition: all 0.1s linear 0s;
+        }
+    }
+}
+
+.email-label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: rgb(39, 56, 82);
+    opacity: 0.3;
+    font-size: 14px;
+    line-height: 22px;
+    transition: all 0.1s linear 0s;
+    pointer-events: none;
+    transform: translateY(-50%);
+    white-space: nowrap;
+}
+
+.email-input {
+    width: 100%;
+        padding: 24px 20px 10px;
+        outline: none;
+        background: rgb(255, 255, 255);
+        border: 1px solid rgb(209, 216, 223);
+        border-radius: 10px;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: unset;
+        margin-bottom: unset;
+
+        padding-right: 142px;
+    &:focus {
+        border: 1px solid rgb(19, 107, 255);
+        &.email-label {
+            color: rgb(19, 107, 255);
+        }
+    }
+}
+
+.button {
+    position: absolute;
+    width: 130px;
+    top: 6px;
+    bottom: 6px;
+    right: 6px;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+}

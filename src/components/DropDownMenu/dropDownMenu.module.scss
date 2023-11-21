@@ -1,0 +1,171 @@
+.list-content {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px 15px;
+    .list-text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(39, 56, 82);
+        white-space: nowrap;
+        cursor: pointer;
+    }
+    .drop-down-wrapper {
+        display: none;
+        position: absolute;
+        top: calc(100%);
+        left: 50%;
+        padding-top: 20px;
+        transform: translateX(-50%);
+
+        .medium {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0px, 1fr));
+            gap: 8px;
+            width: 828px;
+            padding: 16px;
+            background-color: rgb(43, 48, 54);
+            border-radius: 20px;
+            > a {
+                position: relative;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                padding: 16px;
+                border-radius: 10px;
+                cursor: pointer;
+                > img {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 20px;
+                }
+                > div {
+                    flex: 1 1 0%;
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    > h2 {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: rgb(255, 255, 255);
+                    }
+                    > p {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 20px;
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+                }
+            }
+        }
+        .small {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0px, 1fr));
+            gap: 8px;
+            width: 828px;
+            padding: 16px;
+            background-color: rgb(43, 48, 54);
+            border-radius: 20px;
+            > a {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 16px;
+                border-radius: 10px;
+                cursor: pointer;
+                > img {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                > h2 {
+                    margin-top: 16px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: rgb(255, 255, 255);
+                }
+                > p {
+                    margin-top: 4px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+
+        .bigFirst {
+            display: grid;
+            width: 828px;
+            padding: 16px;
+            background-color: rgb(43, 48, 54);
+            border-radius: 20px;
+            grid-template-columns: minmax(0px, 1fr) 260px;
+            gap: 32px;
+            > a:first-child {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 32px;
+                border-radius: 10px;
+                background: rgb(52, 52, 61);
+                cursor: pointer;
+                > img {
+                    width: 40px;
+                    height: 40px;
+                }
+                > div {
+                    flex: 1 1 0%;
+                    display: flex;
+                    flex-direction: column;
+                    -webkit-box-pack: end;
+                    justify-content: flex-end;
+                    margin-top: 26px;
+                    > h2 {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: rgb(255, 255, 255);
+                    }
+                    > p {
+                        margin-top: 4px;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 20px;
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+                }
+                &:hover {
+                    background: rgba(255, 255, 255, 0.04);
+                }
+            }
+            > div {
+                display: flex;
+                flex-direction: column;
+                > a {
+                    padding: 10px 16px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: rgb(255, 255, 255);
+                    border-radius: 10px;
+                }
+            }
+        }
+        a:hover {
+            background: rgba(255, 255, 255, 0.04);
+        }
+    }
+    &:hover {
+        .drop-down-wrapper {
+            display: block;
+        }
+    }
+}

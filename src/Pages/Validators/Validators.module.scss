@@ -1,0 +1,52 @@
+.wrapper {
+    width: 100%;
+    background-color: rgb(248, 250, 252);
+
+    .container {
+        position: relative;
+        height: 100%;
+        max-width: 1360px;
+        min-width: 320px;
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        > h2 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 50px;
+            text-align: center;
+            color: rgb(39, 56, 82);
+        }
+        > p {
+            margin-top: 8px;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: rgb(122, 138, 160);
+        }
+        .list-box {
+            flex: 1 1 0%;
+            display: flex;
+            flex-wrap: wrap;
+            -webkit-box-pack: center;
+            justify-content: center;
+            margin: 32px -16px -16px;
+            .box {
+                display: flex;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                align-items: center;
+                width: calc((100% - 192px) / 6);
+                margin: 0px 16px 16px;
+                > img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

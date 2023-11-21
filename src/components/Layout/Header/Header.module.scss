@@ -1,0 +1,47 @@
+.wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: transparent;
+    z-index: 9999;
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        max-width: 1360px;
+        min-width: 320px;
+        margin: auto;
+
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        .logo-wrapper {
+            width: 146px;
+            display: flex;
+            -webkit-box-pack: start;
+            justify-content: flex-start;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+        .lists-wrapper {
+            position: relative;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+        .button-wrapper {
+            width: 146px;
+            height: 44px;
+            .twitter-logo {
+                width: 24px;
+                height: 24px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

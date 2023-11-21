@@ -1,0 +1,100 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1360px;
+    min-width: 320px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0px;
+    > h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        text-align: center;
+        color: rgb(39, 56, 82);
+    }
+
+    > P {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: rgb(122, 138, 160);
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0px;
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1360px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    margin: 32px 0px 0px;
+}
+
+.button {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 24px 32px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(221, 224, 231) 0px 8px 32px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    width: calc(33.3333% - 32px);
+    margin: 0px 16px 32px;
+     img {
+        width: 48px;
+        height: 48px;
+        margin-right: 32px;
+    }
+
+    &:hover {
+        box-shadow: rgb(221, 224, 231) 0px 8px 22px;
+    }
+}
+.text-box {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    > h2 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgb(39, 56, 82);
+        transition: all 0.3s ease 0s;
+    }
+    > p {
+        margin-top: 6px;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgb(122, 138, 160);
+        transition: all 0.3s ease 0s;
+    }
+}

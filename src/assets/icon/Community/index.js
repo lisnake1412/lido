@@ -1,0 +1,7 @@
+export {default as Icon1} from './telegram.svg'
+export {default as Icon2} from './twitter.svg'
+export {default as Icon3} from './research.svg'
+export {default as Icon4} from './github.svg'
+export {default as Icon5} from './telegram.svg'
+export {default as Icon6} from './blog.svg'
+export {default as Icon7} from './mail.svg'
